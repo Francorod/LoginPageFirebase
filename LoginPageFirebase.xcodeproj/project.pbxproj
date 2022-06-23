@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9D8166E72864E69700E0FD4B /* LoginPageFirebaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8166E62864E69700E0FD4B /* LoginPageFirebaseApp.swift */; };
-		9D8166E92864E69700E0FD4B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8166E82864E69700E0FD4B /* ContentView.swift */; };
+		9D8166E92864E69700E0FD4B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8166E82864E69700E0FD4B /* LoginView.swift */; };
 		9D8166EB2864E69900E0FD4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D8166EA2864E69900E0FD4B /* Assets.xcassets */; };
 		9D8166EE2864E69900E0FD4B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D8166ED2864E69900E0FD4B /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		9D8166E32864E69700E0FD4B /* LoginPageFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginPageFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D8166E62864E69700E0FD4B /* LoginPageFirebaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageFirebaseApp.swift; sourceTree = "<group>"; };
-		9D8166E82864E69700E0FD4B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9D8166E82864E69700E0FD4B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		9D8166EA2864E69900E0FD4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D8166ED2864E69900E0FD4B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,7 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				9D8166E62864E69700E0FD4B /* LoginPageFirebaseApp.swift */,
-				9D8166E82864E69700E0FD4B /* ContentView.swift */,
+				9D8166E82864E69700E0FD4B /* LoginView.swift */,
 				9D8166EA2864E69900E0FD4B /* Assets.xcassets */,
 				9D8166EC2864E69900E0FD4B /* Preview Content */,
 			);
@@ -137,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D8166E92864E69700E0FD4B /* ContentView.swift in Sources */,
+				9D8166E92864E69700E0FD4B /* LoginView.swift in Sources */,
 				9D8166E72864E69700E0FD4B /* LoginPageFirebaseApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
