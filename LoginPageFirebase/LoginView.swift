@@ -6,11 +6,16 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct LoginView: View {
     @State var isLoginMode = false
     @State var email = ""
     @State var password = ""
+    
+    init() {
+        FirebaseApp.configure()
+    }
     
     var body: some View {
         NavigationView {
@@ -18,7 +23,7 @@ struct LoginView: View {
                 
                 VStack(spacing: 16) {
                     Picker(selection: $isLoginMode, label:
-                        Text("Picker here")) {
+                            Text("Picker here")) {
                         Text("Login")
                             .tag(true)
                         Text("Create Account")
@@ -36,7 +41,7 @@ struct LoginView: View {
                         }
                         
                     }
-                
+                    
                     
                     TextField("Email", text: $email)
                         .keyboardType(.emailAddress)
@@ -65,12 +70,23 @@ struct LoginView: View {
             }
             .navigationTitle(isLoginMode ? "Log In" : "Create Account")
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
     private func handleAction() {
         if isLoginMode {
             print("You're logged")
         } else {
-            print("Register to see our content")
+            createNewAccount()
+        }
+    }
+    private func createNewAccount() {
+        Auth.auth().createUser(withEmail: email, password: password) {
+            result, error in
+            if let error = error {
+                print("Failed to create user", error)
+                return
+            }
+            print("Sucessfully created user: \(result?.user.uid ?? "")")
         }
     }
 }
